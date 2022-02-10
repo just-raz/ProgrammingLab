@@ -150,7 +150,6 @@ def compute_avg_monthly_difference(time_series, first_year, last_year) -> list:
     if not isinstance(time_series, list):
         raise ExamException(f"Parameter 'time_series' must be a list of lists, not {type(time_series)}")
     
-    # If we are at the right index for the first year or year is already filled with something 
     #Empty list to save the final result
     data = []
     
